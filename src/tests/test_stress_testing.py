@@ -16,7 +16,7 @@ class TestStressTesting(unittest.TestCase):
     
     def test_stress_testing(self):
         self.initialize_simulator()
-        self.simulator.run(10)  # Run the simulation for 15 seconds
+        self.simulator.run(10)  # Run the simulation for 10 seconds
         tsla_order_book = self.simulator.get_order_book("TSLA")
         nflx_order_book = self.simulator.get_order_book("NFLX")
         self.assertTrue(len(tsla_order_book) > 0)  # Order book should contain many orders
